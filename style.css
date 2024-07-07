@@ -119,14 +119,14 @@ body {
     /* margin: 20px; */
     /* flex-direction: row; */
     /* align-items: center; */
+    perspective: 1000px;
 }
 :root{
     --image-width:10vw;
 }
-.game-top-3{
-    perspective: 1000px;
-}
+
 .gtaimg{
+    will-change: transform;
     width: var(--image-width);
     height: auto;
     margin: 3vw;
@@ -149,13 +149,14 @@ body {
     justify-content: center;
     /* padding: 20px; */
     margin-bottom: 30px;
+    transform-style: preserve-3d;
 }
 .game-bottom-2 img{
     width: var(--image-width);
     height: auto;
     margin: 3vw;
     transition: transform 0.2s ease-in-out;
-    transform-style: preserve-3d;
+    
     /* margin-top: px; */
     
     
@@ -177,4 +178,75 @@ body {
     0 0 40px rgba(157, 111, 111, 0.2),
     0 0 50px rgba(77, 55, 55, 0.1);
     ;
+}
+#gta-sa-content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+    background-color: rgb(67, 67, 67);
+    height: auto;
+    background-image:url(assets/gta-sa/gta\ sa\ bg.jpg);
+    background-color: rgb(179, 179, 179);
+    background-blend-mode:overlay;
+    background-size: cover;
+    background-position: center; 
+    /* background-image: linear-gradient(to bottom, #ffcccc, #cc99ff); */
+}
+.gta-sa-content-section{
+    margin-top: 100px ;
+}
+:root{
+    --margin-left-for-content:3vw;
+    --margin-right-for-content:4vw;
+}
+.gta-sa-content-section p{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin: 40px;
+    margin-left: var(--margin-left-for-content);
+    margin-right: var(--margin-left-for-content);
+}
+.gta-sa-content-section h1{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin: 0px;
+    font-size: 5vw;
+    margin-left:var(--margin-left-for-content);
+    position: ab;
+    /* text-align: center; */
+}
+#gta-sa-content img{
+    width: 400px;
+    height: 400px;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    
+}
+
+.quiz-gtasa{
+    background-color: white;
+    margin: 50px;
+    margin-left: var(--margin-left-for-content);
+    margin-right: var(--margin-right-for-content);
+    text-align: center;
+    
+}
+.quiz-gtasa span{
+    font-weight: 300;
+    /* text-align: center; */
+
+}
+.quiz-gtasa-options{
+    display: flex;
+    justify-content: center;
+}
+.quiz-gtasa-options button{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
 }
