@@ -12,8 +12,8 @@ gtasa.addEventListener('mousemove',(e)=>{
     };
     // console.log(center.centerY,clientY)
     const xRotation= (clientX-center.centerX)/clientHeight*40;
-    const yRotation= (clientY-center.centerY)/clientWidth*40;
-    gtasa.style.transform = `rotateX(${yRotation}deg) rotateY(${xRotation}deg) scale(1.1)`;
+    const yRotation= (clientY-center.centerY)/clientWidth*40*-1;
+    gtasa.style.transform = `rotateX(${yRotation}deg) rotateY(${xRotation}deg) scale(1.1) translateZ(8px)`;
     gtasa.style.opacity=1
     gtasa.style.transition='opacity 0.3s ease-in-out'
     // console.log(gtasa.style.transform)
@@ -21,7 +21,7 @@ gtasa.addEventListener('mousemove',(e)=>{
 });
 
 gtasa.addEventListener('mouseleave',(e)=>{
-    gtasa.style.transform = 'rotateX(0) rotateY(0)';
+    gtasa.style.transform = 'rotateX(0) rotateY(0) translateZ(0px)';
     // console.log(gtasa.style.transform)
     gtasa.style.opacity=0.8
 });
@@ -41,9 +41,9 @@ gta4.addEventListener('mousemove',(e)=>{
         centerY:gta4.getBoundingClientRect().y +gta4.getBoundingClientRect().height/2,
     };
     // console.log(center.centerY,clientY)
-    const yRotation= (clientX-center.centerX)/clientHeight*40;
+    const yRotation= (clientX-center.centerX)/clientHeight*40*-1;
     const xRotation= (clientY-center.centerY)/clientWidth*40;
-    gta4.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1)`;
+    gta4.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1) translateZ(8px)`;
     gta4.style.opacity=1
     gta4.style.transition='opacity 0.3s ease-in-out'
     // console.log(gtasa.style.transform)
@@ -51,7 +51,7 @@ gta4.addEventListener('mousemove',(e)=>{
 })
 ;
 gta4.addEventListener('mouseleave',(e)=>{
-    gta4.style.transform = 'rotateX(0) rotateY(0)';
+    gta4.style.transform = 'rotateX(0) rotateY(0) translateZ(0px)';
     gta4.style.opacity=0.8
 
 });
@@ -73,8 +73,8 @@ gta5.addEventListener('mousemove',(e)=>{
     };
     // console.log(center.centerY,clientY)
     const yRotation= (clientX-center.centerX)/clientHeight*40;
-    const xRotation= (clientY-center.centerY)/clientWidth*40;
-    gta5.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1)`;
+    const xRotation= (clientY-center.centerY)/clientWidth*40*-1;
+    gta5.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1) translateZ(8px)`;
     gta5.style.opacity=1
     gta5.style.transition='opacity 0.3s ease-in-out'
 
@@ -83,7 +83,7 @@ gta5.addEventListener('mousemove',(e)=>{
     
 });
 gta5.addEventListener('mouseleave',(e)=>{
-    gta5.style.transform = 'rotateX(0) rotateY(0)';
+    gta5.style.transform = 'rotateX(0) rotateY(0) translateZ(0px)';
     gta5.style.opacity=0.8
 
 });
@@ -104,8 +104,8 @@ btlfld.addEventListener('mousemove',(e)=>{
     };
     // console.log(center.centerY,clientY)
     const yRotation= (clientX-center.centerX)/clientHeight*40;
-    const xRotation= (clientY-center.centerY)/clientWidth*40;
-    btlfld.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1)`;
+    const xRotation= (clientY-center.centerY)/clientWidth*40*-1;
+    btlfld.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1) translateZ(8px)`;
     btlfld.style.opacity=1
     btlfld.style.transition='opacity 0.3s ease-in-out'
 
@@ -114,7 +114,7 @@ btlfld.addEventListener('mousemove',(e)=>{
     
 });
 btlfld.addEventListener('mouseleave',(e)=>{
-    btlfld.style.transform = 'rotateX(0) rotateY(0)';
+    btlfld.style.transform = 'rotateX(0) rotateY(0) translateZ(0px)';
     btlfld.style.opacity=0.8
 
 });
@@ -134,8 +134,8 @@ factorio.addEventListener('mousemove',(e)=>{
     };
     // console.log(center.centerY,clientY)
     const yRotation= (clientX-center.centerX)/clientHeight*40;
-    const xRotation= (clientY-center.centerY)/clientWidth*40;
-    factorio.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1)`;
+    const xRotation= (clientY-center.centerY)/clientWidth*40*-1;
+    factorio.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale(1.1) translateZ(8px)`;
     factorio.style.opacity=1
     factorio.style.transition='opacity 0.3s ease-in-out'
 
@@ -144,7 +144,7 @@ factorio.addEventListener('mousemove',(e)=>{
     
 });
 factorio.addEventListener('mouseleave',(e)=>{
-    factorio.style.transform = 'rotateX(0) rotateY(0)';
+    factorio.style.transform = 'rotateX(0) rotateY(0) translateZ(0px)';
     factorio.style.opacity=0.8
 
 });
