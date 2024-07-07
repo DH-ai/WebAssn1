@@ -216,9 +216,12 @@ body {
     position: ab;
     /* text-align: center; */
 }
+:root{
+    --gtasa-sqdim:34vw
+}
 #gta-sa-content img{
-    width: 400px;
-    height: 400px;
+    width: var(--gtasa-sqdim);
+    height: var(--gtasa-sqdim);
     border-color: white;
     border-width: 10px;
     border-style: solid;
