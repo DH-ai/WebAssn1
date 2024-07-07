@@ -1,9 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Roboto", sans-serif;
     /* font-weight: 700; */
     margin: 0;
     padding: 0;
     background-color: black;
+    scroll-behavior: smooth;
 }
 .navbar{
     background-color: #ffffff;
@@ -56,7 +60,7 @@ body {
 .hero-header-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Adjust height as needed */
+    height: 100vh; 
     overflow: hidden;
     /* background-color: black; */
 
@@ -156,6 +160,7 @@ body {
     /* padding: 20px; */
     margin-bottom: 30px;
     transform-style: preserve-3d;
+    
 }
 .game-bottom-2 img{
     width: var(--image-width);
@@ -196,8 +201,7 @@ body {
     background-color: rgb(179, 179, 179);
     background-blend-mode:overlay;
     background-size: cover;
-    background-position: center; 
-    /* background-image: linear-gradient(to bottom, #ffcccc, #cc99ff); */
+    
 }
 .gta-sa-content-section{
     margin-top: 100px ;
@@ -226,6 +230,7 @@ body {
     --sqdim:34vw
 }
 #gta-sa-content img{
+
     width: var(--sqdim);
     height: var(--sqdim);
     border-color: white;
@@ -234,6 +239,7 @@ body {
     margin-right: 80px;
     margin-bottom: 80px;
     margin-top: 80px;
+
     
 }
 
@@ -248,6 +254,7 @@ body {
     background-blend-mode:overlay;
     background-size: cover;
     background-position: center; 
+    /* background-attachment:; */
 }
 
 #gta4-content img{
@@ -307,7 +314,7 @@ body {
 .gta5-content-section{
     /* margin: 0px; */
     margin-top: 100px;
-    background-color: rgba(46, 34, 21, 0.745);
+    background-color: rgba(0, 0, 0, 0.516);
     background-blend-mode: color-burn;
     height: fit-content;
     width:fit-content;
@@ -331,6 +338,103 @@ body {
     margin: 40px;
     margin-left: var(--margin-left-for-content);
     margin-right: var(--margin-left-for-content);
+}
+
+#battle3-content{
+    display: flex;
+    justify-content: baseline;
+    background-image: url("assets/Battlefield 3/btlfld3-bg-img.jpg");
+    
+    background-color: rgb(83, 89, 112);
+    background-blend-mode:darken;
+    background-size: cover;
+    background-position: center; 
+    /* background-attachment:fixed ; */
+}
+#battle3-content img{
+    width: var(--sqdim);
+    height: var(--sqdim);
+    border-color: rgba(91, 90, 98, 0.83);
+    border-width: 10px;
+    border-style: solid;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.battle3-content-section{
+    /* margin: 0px; */
+    margin-top: 100px;
+}
+.battle3-content-section h1{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin: 0px;
+    font-size: 5vw;
+    margin-left:var(--margin-left-for-content);
+    /* opacity: 0.8; */
+    -webkit-text-fill-color:rgba(255, 255, 255, 0.849);
+}
+.battle3-content-section p{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    margin: 40px;
+    margin-left: var(--margin-left-for-content);
+    margin-right: var(--margin-left-for-content);
+}
+#fact-content{
+    display: flex;
+    justify-content: baseline;
+    background-color: rgb(125, 115, 89);
+    background-image: url(assets/factorio/factorio-bg-img.jpg);
+    background-blend-mode:overlay;
+}
+#fact-content img{
+    width: var(--sqdim);
+    height: var(--sqdim);
+    border-color: rgb(133, 97, 57);
+    border-width: 10px;
+    border-style: solid;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.fact-content-section{
+    /* margin: 0px; */
+    margin-top: 100px;
+}
+.fact-content-section h1{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin: 0px;
+    font-size: 5vw;
+    margin-left:var(--margin-left-for-content);
+    /* opacity: 0.8; */
+    -webkit-text-fill-color:rgba(255, 255, 255, 0.849);
+}
+.fact-content-section p{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    margin: 40px;
+    margin-left: var(--margin-left-for-content);
+    margin-right: var(--margin-left-for-content);
+}
+@media only screen and (min-width:600px){
+    #gta-sa-content{
+        background-attachment: fixed;
+    }
+    #gta4-content{
+        background-attachment: fixed;
+    }
+    #gta5-content{
+        background-attachment: fixed;
+    }
+    #battle3-content{
+        background-attachment: fixed;
+    }
+    #fact-content{
+        background-attachment: fixed;
+    }
+    
 }
 
 

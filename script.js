@@ -150,3 +150,17 @@ factorio.addEventListener('mouseleave',(e)=>{
 });
 
 
+
+
+const musics = document.querySelectorAll('#music')
+
+musics.forEach(music=>{
+    const load = music.nextElementSibling;
+    music.addEventListener('mouseover',(e)=>{
+        load.play();
+    });
+    
+    music.addEventListener('mouseleave',(e)=>{
+        load.pause();
+    });
+});
