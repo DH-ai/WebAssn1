@@ -131,8 +131,15 @@ body {
     height: auto;
     margin: 3vw;
     margin-bottom: 0px;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease-in-out;
     transform-style: preserve-3d;
+    box-shadow:
+    0 0 10px rgba(255, 227, 182, 0.5),
+    0 0 20px rgba(194, 177, 135, 0.4),
+    0 0 30px rgba(146, 136, 101, 0.3),
+    0 0 40px rgba(157, 140, 111, 0.2),
+    0 0 50px rgba(77, 71, 55, 0.1);
+    ;
     /* image */
 }
 
@@ -147,6 +154,27 @@ body {
     width: var(--image-width);
     height: auto;
     margin: 3vw;
+    transition: transform 0.2s ease-in-out;
+    transform-style: preserve-3d;
     /* margin-top: px; */
     
+    
+}
+#btlfldimg{
+    box-shadow:
+    0 0 10px rgba(182, 209, 255, 0.5),
+    0 0 20px rgba(135, 146, 194, 0.4),
+    0 0 30px rgba(101, 113, 146, 0.3),
+    0 0 40px rgba(111, 115, 157, 0.2),
+    0 0 50px rgba(55, 55, 77, 0.1);
+    ;
+}
+#fctrimg{
+    box-shadow:
+    0 0 10px rgba(255, 182, 182, 0.5),
+    0 0 20px rgba(194, 135, 135, 0.4),
+    0 0 30px rgba(146, 101, 101, 0.3),
+    0 0 40px rgba(157, 111, 111, 0.2),
+    0 0 50px rgba(77, 55, 55, 0.1);
+    ;
 }
