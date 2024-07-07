@@ -92,11 +92,17 @@ body {
 }
 .hero-content-para{
     color: white;
-    font-size: 3vh;
+    font-size: 100%;
     font-weight: 200;
     margin: 100px;
 
 }
+@media only screen and (max-width: 400px) {
+    .hero-content-para {
+      /* background-color: lightblue; */
+      font-size: 80%;
+    }
+  }
 .games-title{
     /* background-color: white; */
     text-align: center;
@@ -213,15 +219,15 @@ body {
     margin: 0px;
     font-size: 5vw;
     margin-left:var(--margin-left-for-content);
-    position: ab;
+    /* position: ab; */
     /* text-align: center; */
 }
 :root{
-    --gtasa-sqdim:34vw
+    --sqdim:34vw
 }
 #gta-sa-content img{
-    width: var(--gtasa-sqdim);
-    height: var(--gtasa-sqdim);
+    width: var(--sqdim);
+    height: var(--sqdim);
     border-color: white;
     border-width: 10px;
     border-style: solid;
@@ -231,25 +237,150 @@ body {
     
 }
 
-.quiz-gtasa{
-    background-color: white;
-    margin: 50px;
-    margin-left: var(--margin-left-for-content);
-    margin-right: var(--margin-right-for-content);
-    text-align: center;
-    
-}
-.quiz-gtasa span{
-    font-weight: 300;
-    /* text-align: center; */
-
-}
-.quiz-gtasa-options{
+#gta4-content{
     display: flex;
     justify-content: center;
+    
+
+    height: auto;
+    background-image:url(assets/GTA-4/gta4-bg-image.jpg);
+    background-color: rgb(193, 193, 193);
+    background-blend-mode:overlay;
+    background-size: cover;
+    background-position: center; 
 }
-.quiz-gtasa-options button{
-    width: 100px;
-    height: 50px;
-    margin: 10px;
+
+#gta4-content img{
+    width: var(--sqdim);
+    height: var(--sqdim);
+    border-color: rgb(148, 128, 103);
+    border-width: 10px;
+    border-style: solid;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.gta4-content-section{
+    margin-top: 100px;
+}
+
+.gta4-content-section h1{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin: 0px;
+    font-size: 5vw;
+    margin-left:var(--margin-left-for-content);
+    /* position: ab; */
+    /* text-align: center; */
+}
+
+.gta4-content-section p{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin: 40px;
+    margin-left: var(--margin-left-for-content);
+    margin-right: var(--margin-left-for-content);
+}
+
+
+#gta5-content{
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-image:url(assets/gtaV/gta5-bg-img.jpg);
+    background-color: rgb(53, 53, 53);
+    background-blend-mode:overlay;
+    background-size: cover;
+    background-position: center; 
+}
+#gta5-content img{
+    width: var(--sqdim);
+    height: var(--sqdim);
+    border-color: rgb(148, 128, 103);
+    border-width: 10px;
+    border-style: solid;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.gta5-content-section{
+    /* margin: 0px; */
+    margin-top: 100px;
+    background-color: rgba(46, 34, 21, 0.745);
+    background-blend-mode: color-burn;
+    height: fit-content;
+    width:fit-content;
+    margin-right: 2vw;
+    margin-left: 2vw;
+
+    /* paddin; */
+}
+.gta5-content-section h1{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin: 0px;
+    font-size: 5vw;
+    margin-left:var(--margin-left-for-content);
+    /* position: ab; */
+    /* text-align: center; */
+}
+.gta5-content-section p{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    margin: 40px;
+    margin-left: var(--margin-left-for-content);
+    margin-right: var(--margin-left-for-content);
+}
+
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.footer-content {
+    margin-top: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    max-width: auto;
+    /* margin: 0 auto; */
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: rgb(201, 175, 87);
+    font-size: 2vw;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    
+    
+}
+
+.footer-bottom p{
+    margin: 0px;
+    margin-bottom: 0px;
+    background-color:#ffffff;
+    font-size: 100%;
+    font-weight: 300;
+    /* padding: 10px 0; */
 }
