@@ -391,7 +391,7 @@ body {
 #fact-content img{
     width: var(--sqdim);
     height: var(--sqdim);
-    border-color: rgb(133, 97, 57);
+    border-color: #7d6d49;
     border-width: 10px;
     border-style: solid;
     margin-right: 80px;
@@ -436,7 +436,14 @@ body {
     }
     
 }
+#music{
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+#music:hover{
 
+    opacity: 1;
+}
 
 footer {
     background-color: #f0f0f0;
