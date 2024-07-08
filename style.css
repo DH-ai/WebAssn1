@@ -104,19 +104,28 @@ body {
 @media only screen and (max-width: 400px) {
     .hero-content-para {
       /* background-color: lightblue; */
-      font-size: 80%;
+      font-size: calc(1em - 1.4vw);
     }
+
   }
 .games-title{
     /* background-color: white; */
     text-align: center;
-    color: rgb(215, 215, 215);
+    color: rgb(255, 255, 255);
     font-size: 7vw;
     margin-top: 50px;
     font-weight: 500;
-    text-shadow: 1px 2px 3px #ffffff;
+    text-shadow:
+     0.8px 0.8px  rgb(180, 180, 180),
+     1.6px 1.6px  rgb(180, 180, 180),
+     2.4px 2.4px  rgb(180, 180, 180),
+     3.2px 3.2px  rgb(180, 180, 180),
+     4px 4px  rgb(180, 180, 180),
+     4.8px 4.8px  rgb(180, 180, 180),
+     0 0 10px rgb(255, 255, 255)
+    ;
 
-    margin-top: 30px;
+    margin-top: 2vh;
     margin-bottom: 5vh;
 
 }
@@ -418,6 +427,74 @@ body {
     margin-left: var(--margin-left-for-content);
     margin-right: var(--margin-left-for-content);
 }
+#music{
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+#music:hover{
+
+    opacity: 1;
+}
+@media only screen and (max-width:600px){
+    #gta-sa-content{
+        /* justify-content: center; */
+        text-align: center;
+        p{
+            font-size: 10px;
+        }
+        img{
+            display: none;
+            
+        }
+    } 
+    
+    #gta4-content {
+        text-align: center;
+        p{
+            font-size: 10px;
+        }
+        img{
+            display: none;
+        }
+    }
+    
+    #gta5-content{
+        text-align: center;
+        p{
+            font-size: 10px;
+        }
+        img{
+            display: none;
+        }
+          
+        
+    } 
+    #battle3-content {
+        text-align: center;
+        p{
+            font-size: 10px;
+        }
+        img{
+            display: none;
+        }
+          
+    } 
+    #fact-content{
+        text-align: center;
+        p{
+            font-size: 10px;
+        }
+        img{
+            display: none;
+        }
+          
+    } 
+    .footer-bottom{
+        font-size: 10px;
+    }
+
+    
+}
 @media only screen and (min-width:600px){
     #gta-sa-content{
         background-attachment: fixed;
@@ -435,14 +512,7 @@ body {
         background-attachment: fixed;
     }
     
-}
-#music{
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out;
-}
-#music:hover{
-
-    opacity: 1;
+    
 }
 
 footer {
